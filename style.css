@@ -168,40 +168,24 @@ header {
 
 }
 
-
+/* FIXED PROFILE IMAGE */
 .profile-image {
-
-    width: 175px;
-
-    height: 175px;
-
+    width: 200px;         /* योग्य रुंदी */
+    height: 200px;        /* योग्य उंची */
     margin: 0 auto 25px;
-
     padding: 5px;
-
     border-radius: 50%;
-
     background: #38bdf8;
-
-    box-shadow:
-        0 0 35px
-        rgba(56, 189, 248, 0.35);
-
+    box-shadow: 0 0 30px rgba(56, 189, 248, 0.4);
+    flex-shrink: 0;
 }
 
-
 .profile-image img {
-
     width: 100%;
-
     height: 100%;
-
-    object-fit: cover;
-
+    object-fit: cover;    /* फोटो न ताणता गोल क्रॉप होईल */
     border-radius: 50%;
-
-    border: 5px solid #0b1120;
-
+    border: 4px solid #0b1120;
 }
 
 
