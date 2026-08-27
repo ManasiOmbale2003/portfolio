@@ -170,8 +170,8 @@ header {
 
 /* FIXED PROFILE IMAGE */
 .profile-image {
-    width: 200px;         /* योग्य रुंदी */
-    height: 200px;        /* योग्य उंची */
+    width: 50px;         /* योग्य रुंदी */
+    height: 50px;        /* योग्य उंची */
     margin: 0 auto 25px;
     padding: 5px;
     border-radius: 50%;
@@ -181,8 +181,8 @@ header {
 }
 
 .profile-image img {
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: 50%;
     object-fit: cover;    /* फोटो न ताणता गोल क्रॉप होईल */
     border-radius: 50%;
     border: 4px solid #0b1120;
