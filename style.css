@@ -132,33 +132,20 @@ header {
 /* HERO */
 
 .hero {
-
     min-height: 100vh;
-
     display: flex;
-
     align-items: center;
-
     justify-content: center;
-
     text-align: center;
-
     padding: 130px 20px 70px;
+    gap: 40px; /* फोटो आणि मजकूरात अंतर ठेवण्यासाठी */
+}
 
-    background:
-
-        radial-gradient(
-            circle at top right,
-            #12395b,
-            transparent 40%
-        ),
-
-        radial-gradient(
-            circle at bottom left,
-            #172554,
-            transparent 40%
-        );
-
+/* मोबाईल व्ह्यूसाठी */
+@media (max-width: 800px) {
+    .hero {
+        flex-direction: column;
+    }
 }
 
 
