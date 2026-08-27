@@ -129,33 +129,7 @@ header {
 
 
 
-/* HERO */
-
-.hero {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 130px 20px 70px;
-    gap: 40px; /* फोटो आणि मजकूरात अंतर ठेवण्यासाठी */
-}
-
-/* मोबाईल व्ह्यूसाठी */
-@media (max-width: 800px) {
-    .hero {
-        flex-direction: column;
-    }
-}
-
-
-.hero-content {
-
-    max-width: 850px;
-
-}
-
-/* HERO SECTION FIX (LAPTOP & MOBILE) */
+/* HERO SECTION FIXED */
 .hero {
     min-height: 100vh;
     display: flex;
@@ -163,25 +137,27 @@ header {
     justify-content: center;
     text-align: center;
     padding: 120px 20px 60px;
+    background: radial-gradient(circle at top right, #12395b, transparent 40%),
+                radial-gradient(circle at bottom left, #172554, transparent 40%);
 }
 
 .hero-content {
-    max-width: 850px;
+    max-width: 800px;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-/* PROFILE IMAGE FIX */
 .profile-image {
-    width: 180px !important;
-    height: 180px !important;
+    width: 170px !important;
+    height: 170px !important;
     margin: 0 auto 20px auto !important;
     padding: 4px;
     border-radius: 50%;
     background: #38bdf8;
-    box-shadow: 0 0 30px rgba(56, 189, 248, 0.4);
+    box-shadow: 0 0 25px rgba(56, 189, 248, 0.4);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -198,40 +174,35 @@ header {
     display: block !important;
 }
 
-/* MOBILE RESPONSIVE FIX */
-@media (max-width: 600px) {
-    .profile-image {
-        width: 150px !important;
-        height: 150px !important;
-    }
-    
-    .hero h1 {
-        font-size: 36px;
-    }
+.hello {
+    color: #38bdf8;
+    font-size: 20px;
+    margin-bottom: 5px;
 }
 
+.hero h1 {
+    font-size: 48px;
+    margin: 5px 0 10px;
+    line-height: 1.2;
+}
 
 .hero h2 {
-
     color: #38bdf8;
-
-    font-size: 30px;
-
-    margin-bottom: 20px;
-
+    font-size: 26px;
+    margin-bottom: 25px;
 }
 
-
-.hero-description {
-
-    color: #cbd5e1;
-
-    max-width: 760px;
-
-    margin: auto;
-
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 10px;
 }
 
+.social-icons {
+    margin-top: 25px;
+}
 
 .hero-buttons {
 
